@@ -55,23 +55,23 @@ function CalculResultat(typeCalcul) {
   writeToLog(typeCalcul, inti, numbr, currentResult);
 }
 
-function add() {
-  CalculResultat("ADD");
-}
+// function add() {
+//   CalculResultat("ADD");
+// }
 
-function sub() {
-  CalculResultat("SUB");
-}
+// function sub() {
+//   CalculResultat("SUB");
+// }
 
-function mul() {
-  CalculResultat("MUL");
-}
+// function mul() {
+//   CalculResultat("MUL");
+// }
 
-function div() {
-  CalculResultat("DIV");
-}
+// function div() {
+//   CalculResultat("DIV");
+// }
 
-addBtn.addEventListener("click", add);
-subtractBtn.addEventListener("click", sub);
-divideBtn.addEventListener("click", div);
-multiplyBtn.addEventListener("click", mul);
+addBtn.addEventListener("click", CalculResultat.bind(this, "ADD"));
+subtractBtn.addEventListener("click", CalculResultat.bind(this, "SUB"));
+divideBtn.addEventListener("click", CalculResultat.bind(this, "MUL"));
+multiplyBtn.addEventListener("click", CalculResultat.bind(this, "DIV"));
