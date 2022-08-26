@@ -75,3 +75,5 @@ addBtn.addEventListener("click", CalculResultat.bind(this, "ADD"));
 subtractBtn.addEventListener("click", CalculResultat.bind(this, "SUB"));
 divideBtn.addEventListener("click", CalculResultat.bind(this, "MUL"));
 multiplyBtn.addEventListener("click", CalculResultat.bind(this, "DIV"));
+// bind elle nous permet de preparer la fonction avec les parametres indiquer
+// et elle n'appelle pas la fonction directement
